@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>JahonCodes</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<%= render 'layouts/navigation' %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<%= javascript_include_tag('https://unpkg.com/typeit@8.8.5/dist/index.umd.js') %>
 
-  <body>
-    <%= render 'layouts/navigation' %>
-
-  </body>
-</html>
+<div class="container mx-auto px-4 md:flex items-center">
+    Your friendly neighborhood software engineer
+</div>

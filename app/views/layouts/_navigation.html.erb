@@ -9,10 +9,11 @@ https://www.youtube.com/watch?v=h_xmLBxS5SA&ab_channel=webcrunch
 
 <%= javascript_include_tag('navigation.js') %>
 
-<nav class="bg-sky-500 text-white ">
+<nav class="text-black">
     <div class="container mx-auto px-4 md:flex items-center gap-6">
         <div class="flex items-center justify-between md:w-auto w-full">
-            <a href="#" class="py-5 px-2 text-white flex-1">JahonCodes</a>
+            <%= link_to "JahonCodes", root_path, class: "py-3" %>
+
             <%# Mobile menu icon %>
             <div class="md:hidden flex items-center">
                 <button type="button" class="mobile-menu-button">
@@ -24,7 +25,7 @@ https://www.youtube.com/watch?v=h_xmLBxS5SA&ab_channel=webcrunch
         </div>
 
         <div class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu ml-auto">
-            <%= link_to "Home", root_path, class: "py-2 px-3 block mx-auto" %>
+            <%= link_to "Home", root_path, class: "py-2 px-3 block mx-auto hover:bg-red" %>
             <%= link_to "Blog", blog_posts_path, class: "py-2 px-3 block mx-auto" %>
         </div>
     </div>
