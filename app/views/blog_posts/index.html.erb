@@ -3,12 +3,17 @@
 <%= javascript_include_tag('navigation.js') %>
 
 <div class="container mx-auto px-4">
+
     <% @blog_posts.each do |blog_post| %>
+
         <div class="py-2">
             <h2>
                 <%= link_to blog_post.title, blog_post %>
             </h2>
+            <%= link_to "Edit Blog", edit_blog_post_path(blog_post) if user_signed_in? %>
             <p><%= blog_post.body %></p>
         </div>
+
     <% end %>
+
 </div>
