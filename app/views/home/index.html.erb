@@ -2,6 +2,14 @@
 
 <%= javascript_include_tag('https://unpkg.com/typeit@8.8.5/dist/index.umd.js') %>
 
-<div class="container mx-auto px-4 md:flex items-center">
-    Your friendly neighborhood software engineer. I help aspiring developers and teams grasp software engineering concepts with bite-sized, visual and practical tech content.
+<div class="w-full">
+  <!-- Canvas fills entire background -->
+  <canvas id="canvas" class="absolute w-full h-full z-0"></canvas>
+
+  <!-- Text overlay with consistent padding and natural height -->
+  <div class="relative z-10 px-4 md:px-8 py-10 text-2xl md:text-4xl max-w-4xl mx-auto text-xl">
+    Hi! My name is Jahon.<br> I help aspiring developers and teams grasp software engineering concepts with bite-sized, visual and practical tech content.
+  </div>
 </div>
+
+<%= javascript_include_tag('animation.js') %>
