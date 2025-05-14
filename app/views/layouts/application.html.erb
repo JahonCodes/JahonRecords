@@ -8,9 +8,10 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= favicon_link_tag 'jr_cropped.png' %>
   </head>
 
-  <body>
+  <body class="overflow-x-auto overflow-y-hidden">
       <%
 =begin%>
  <p class="notice"><%= notice %></p> 
