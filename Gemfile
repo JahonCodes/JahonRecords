@@ -66,6 +66,11 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# handles the styling of our website
 gem "tailwindcss-rails", "~> 2.7"
 
+# handles user sign-in
 gem "devise", "~> 4.9"
+
+# handles the storage of blob files
+gem "aws-sdk-s3", require: false
