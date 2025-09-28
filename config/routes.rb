@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   resources :blog_posts
 
+  get "unblurred-support" => "home#support", as: :support
+  get "unblurred-privacy" => "home#privacy", as: :privacy
+
   root "home#index"
 
 end

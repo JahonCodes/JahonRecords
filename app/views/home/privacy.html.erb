@@ -1,0 +1,133 @@
+<%= render 'layouts/navigation' %>
+
+<div class="min-h-screen bg-slate-50">
+  <div class="max-w-4xl mx-auto px-12 sm:px-16 lg:px-20 xl:px-24 py-20">
+    <!-- Header -->
+    <div class="text-center mb-24">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-lg mb-8">
+        <%= image_tag "unblurred-icon.png", alt: "Unblurred", class: "w-10 h-10" %>
+      </div>
+      <h1 class="text-5xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        Last updated: <%= Date.current.strftime("%B %d, %Y") %>
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="bg-white rounded-3xl shadow-xl p-12 mb-24">
+      <div class="prose prose-slate max-w-none">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Overview</h2>
+        <p class="text-slate-700 mb-8">
+          Unblurred is a productivity and focus app that helps users manage tasks, projects, and goals through focus sessions and voice notes. This privacy policy explains how we handle your data when you use our app.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Data Collection</h2>
+        <p class="text-slate-700 mb-4">Unblurred collects the following types of data:</p>
+        
+        <h3 class="text-xl font-semibold text-slate-900 mb-6">Audio Data</h3>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li><strong>What:</strong> Voice recordings from microphone</li>
+          <li><strong>Purpose:</strong> Voice-to-text transcription for brain dump entries</li>
+          <li><strong>Storage:</strong> Stored locally on your device only</li>
+          <li><strong>Sharing:</strong> Not shared with any third parties</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-slate-900 mb-6">User Content</h3>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li><strong>What:</strong> Tasks, projects, goals, notes, and focus session data</li>
+          <li><strong>Purpose:</strong> Core app functionality and data persistence</li>
+          <li><strong>Storage:</strong> Stored locally on your device only</li>
+          <li><strong>Sharing:</strong> Not shared with any third parties</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-slate-900 mb-6">App Usage Data</h3>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li><strong>What:</strong> App preferences, settings, and focus session timers</li>
+          <li><strong>Purpose:</strong> App functionality and user experience</li>
+          <li><strong>Storage:</strong> Stored locally on your device only</li>
+          <li><strong>Sharing:</strong> Not shared with any third parties</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Data Storage and Security</h2>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li>All data is stored locally on your device</li>
+          <li>No data is transmitted to external servers</li>
+          <li>No data is shared with third parties</li>
+          <li>Data is not used for advertising or analytics</li>
+          <li>Data is not sold to any third parties</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Permissions</h2>
+        <p class="text-slate-700 mb-6">Unblurred requests the following permissions:</p>
+        
+        <h3 class="text-xl font-semibold text-slate-900 mb-6">Microphone Permission</h3>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li><strong>Purpose:</strong> To record voice notes for brain dump entries</li>
+          <li><strong>Usage:</strong> Only when you actively choose to record voice notes</li>
+          <li><strong>Control:</strong> You can revoke this permission in your device settings at any time</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Your Rights</h2>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li><strong>Delete Data:</strong> You can delete all app data by uninstalling the app</li>
+          <li><strong>Revoke Permissions:</strong> You can revoke microphone permission in device settings</li>
+          <li><strong>Data Portability:</strong> All data remains on your device and is not transmitted elsewhere</li>
+          <li><strong>No Account Required:</strong> The app works without creating an account</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Third-Party Services</h2>
+        <p class="text-slate-700 mb-8">
+          Unblurred does not use any third-party analytics, advertising, or data collection services.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Children's Privacy</h2>
+        <p class="text-slate-700 mb-8">
+          Unblurred does not knowingly collect personal information from children under 13. The app is suitable for all ages.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Changes to This Policy</h2>
+        <p class="text-slate-700 mb-8">
+          We may update this privacy policy from time to time. Any changes will be posted in the app and on this page.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Contact Information</h2>
+        <p class="text-slate-700 mb-6">
+          If you have any questions about this privacy policy, please contact us at:
+        </p>
+        <ul class="list-disc list-inside text-slate-700 mb-8 space-y-3">
+          <li>Email: <a href="mailto:hello@thejrstudio.com" class="text-blue-600 hover:text-blue-800">hello@thejrstudio.com</a></li>
+          <li>Website: <a href="https://thejrstudio.com" class="text-blue-600 hover:text-blue-800">thejrstudio.com</a></li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Data Controller</h2>
+        <p class="text-slate-700 mb-8">
+          The data controller for this app is JR Studio.
+        </p>
+
+        <div class="border-t border-slate-200 pt-6 mt-8">
+          <p class="text-sm text-slate-500">
+            This privacy policy is effective as of the date listed above and applies to all users of the Unblurred app.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center py-12">
+      <div class="inline-flex items-center space-x-8 mb-6">
+        <a href="/unblurred-support" class="text-slate-500 hover:text-slate-700 transition-colors font-medium">
+          Support
+        </a>
+        <a href="/unblurred-privacy" class="text-slate-500 hover:text-slate-700 transition-colors font-medium">
+          Privacy Policy
+        </a>
+      </div>
+      <p class="text-slate-400 text-sm">
+        © <%= Date.current.year %> JR Studio. All rights reserved.
+      </p>
+      <p class="text-slate-300 text-xs mt-2">
+        Unblurred - Focus on what matters
+      </p>
+    </div>
+  </div>
+</div>
