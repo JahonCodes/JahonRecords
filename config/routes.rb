@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-  resources :blog_posts
+  resources :projects, only: [:index]
 
   get "unblurred-support" => "home#support", as: :support
   get "unblurred-privacy" => "home#privacy", as: :privacy
