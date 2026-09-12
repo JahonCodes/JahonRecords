@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jahon Records</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="assets/images/jr_cropped.png">
+</head>
+
+<body class="overflow-x-auto">
+  <nav class="text-black">
+    <div class="container mx-auto px-4 md:flex items-center gap-6">
+      <div class="flex items-center justify-between md:w-auto w-full">
+        <a href="./" class="block leading-none">
+          <img src="assets/images/jr_cropped.png" alt="JahonRecords" class="block h-10 w-auto py-2">
+        </a>
+
+        <div class="md:hidden flex items-center">
+          <button type="button" class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu ml-auto">
+        <a href="./" class="py-2 px-3 block mx-auto hover:bg-red-200">Home</a>
+        <a href="projects/" class="py-2 px-3 block mx-auto hover:bg-red-200">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-full">
+    <!-- Canvas fills entire background -->
+    <canvas id="canvas" class="absolute w-full h-full z-0"></canvas>
+
+    <!-- Text overlay with consistent padding and natural height -->
+    <div class="relative z-10 px-4 md:px-8 py-10 text-2xl md:text-4xl max-w-4xl mx-auto text-xl">
+      Hi! My name is Jahon.<br> Your friendly neighborhood developer from San Francisco Bay Area.
+    </div>
+  </div>
+
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animation.js"></script>
+</body>
+</html>

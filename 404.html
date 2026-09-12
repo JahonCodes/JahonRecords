@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found &middot; Jahon Records</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="assets/images/jr_cropped.png">
+</head>
+
+<body class="overflow-x-auto">
+  <nav class="text-black">
+    <div class="container mx-auto px-4 md:flex items-center gap-6">
+      <div class="flex items-center justify-between md:w-auto w-full">
+        <a href="./" class="block leading-none">
+          <img src="assets/images/jr_cropped.png" alt="JahonRecords" class="block h-10 w-auto py-2">
+        </a>
+
+        <div class="md:hidden flex items-center">
+          <button type="button" class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu ml-auto">
+        <a href="./" class="py-2 px-3 block mx-auto hover:bg-red-200">Home</a>
+        <a href="projects/" class="py-2 px-3 block mx-auto hover:bg-red-200">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 py-24 text-center">
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">Page not found</h1>
+    <p class="text-lg text-gray-600 mb-8">You may have mistyped the address, or the page may have moved.</p>
+    <a href="./" class="py-2 px-4 inline-block bg-gray-900 text-white rounded-md hover:bg-gray-700 transition-colors">Back to home</a>
+  </div>
+
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>
